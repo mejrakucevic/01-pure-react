@@ -16,7 +16,11 @@
         // const time = new Date().toLocaleTimeString();
         const [time, setTime] = React.useState(new Date().toLocaleTimeString());
 
-        return React.createElement("header", null, `Hello React It's ${time}!`);
+        return React.createElement(
+          "header",
+          null,
+          `Hello React, It's ${time}!`
+        );
       }
 
       const root = ReactDOM.createRoot(document.getElementById("root"));
