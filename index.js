@@ -10,7 +10,7 @@ const pizzaData = [
     soldOut: false,
   },
   {
-    name: "Piza Margherita",
+    name: "Pizza Margherita",
     ingredients: "Tomato and mozarella",
     price: 10,
     photoName: "pizzas/margherita.jpg",
@@ -49,7 +49,8 @@ const pizzaData = [
 function App() {
   return (
     <div>
-      <h1>Hello React!</h1>
+      <Pizza />
+      <Pizza />
       <Pizza />
     </div>
   );
@@ -57,7 +58,13 @@ function App() {
 
 function Pizza() {
   // function must start with a capital Letter
-  return <h2>PIZZZZAAAAAAAAAAA</h2>;
+  return (
+    <div>
+      <img src="pizzas/margherita.jpg" alt="Pizza Margherita" />
+      <h2>Pizza Margherita AKA najbolja vrsta pizze</h2>
+      <p>Tomato and mozarella</p>
+    </div>
+  );
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
