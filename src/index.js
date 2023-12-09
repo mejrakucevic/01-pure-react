@@ -12,7 +12,7 @@ const pizzaData = [
   },
   {
     name: "Pizza Margherita",
-    ingredients: "Tomato and mozarella",
+    ingredients: "Tomato and mozarela",
     price: 10,
     photoName: "pizzas/margherita.jpg",
     soldOut: false,
@@ -70,10 +70,32 @@ function Menu() {
   return (
     <div className="menu">
       <h2>Our menu</h2>
-      <Pizza />
-      <Pizza />
-      <Pizza />
-      <Pizza />
+      <Pizza
+        name="Pizza Margherita"
+        ingredients="Tomato and fresh mozarella"
+        photoName="pizzas/margherita.jpg"
+        price={10}
+      />
+
+      <Pizza
+        name="Pizza Funghi"
+        ingredients="Funghi mushrooms, cheese, onions, tomato"
+        photoName="pizzas/funghi.jpg"
+        price={12}
+      />
+    </div>
+  );
+}
+
+function Pizza(props) {
+  return (
+    <div className="pizza">
+      <img src={props.photoName} alt={props.name} />
+      <div>
+        <h3>{props.name}</h3>
+        <p>{props.ingredients}</p>
+        <span>{props.price + 1 + "$"}</span>
+      </div>
     </div>
   );
 }
@@ -92,17 +114,6 @@ function Footer() {
     <footer className="footer">
       {new Date().toLocaleTimeString()}. We're currently open.
     </footer>
-  );
-}
-
-function Pizza() {
-  // function must start with a capital Letter
-  return (
-    <div>
-      <img src="pizzas/margherita.jpg" alt="Pizza Margherita" />
-      <h3>Pizza Margherita AKA najbolja vrsta pizze</h3>
-      <p>Tomato and mozarella</p>
-    </div>
   );
 }
 
