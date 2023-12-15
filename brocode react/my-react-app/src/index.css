@@ -1,29 +1,20 @@
-.card {
-  border: 1px solid rgb(220, 220, 220);
+.card2 {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px rgb(228, 228, 228) solid;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px rgba(96, 96, 96, 0.235);
-  padding: 20px;
-  margin: 10px;
+  box-shadow: 1px 1px 20px rgb(207, 207, 207);
+  width: 20%;
+  padding: 10px;
   text-align: center;
-  max-width: 250px;
+  color: rgb(196, 119, 219);
   display: inline-block;
+  margin: 20px;
 }
 
-.card .img {
-  max-width: 70%;
-  height: auto;
+.card2 .img {
+  width: 50%;
   border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.card .title {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  color: rgb(160, 114, 203);
-  text-shadow: rgb(193, 193, 193) 1px 1px 3px;
-}
-
-.card .description {
-  font-family: Arial, Helvetica, sans-serif;
-  color: hsl(0, 0%, 30%);
+  padding: 10px;
+  margin-top: 5px;
+  box-shadow: 1px 1px 10px rgb(196, 119, 219);
 }
