@@ -1,12 +1,12 @@
-import Card2 from "./card2.jsx";
+import Student from "./Student.jsx";
 
 function App() {
   return (
     <>
-      <Card2 />
-      <Card2 />
-      <Card2 />
-      <Card2 />;
+      <Student name="Sophia" age={21} isStudent={true} />
+      <Student name="Maria" age={19} isStudent={true} />
+      <Student name="Johnatan" age={23} isStudent={false} />
+      <Student name="Lana" age={26} isStudent={true} />
     </>
   );
 }
