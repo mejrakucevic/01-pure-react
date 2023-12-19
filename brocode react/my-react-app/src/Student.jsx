@@ -1,19 +1,30 @@
-import PropTypes from "prop-types";
+function Question1() {
+  function sayHello() {
+    let evermore = 1;
 
-function Student(props) {
+    if (evermore >= 1) {
+      alert("Evermore!");
+    }
+  }
+
   return (
-    <div className="student">
-      <p>Name: {props.name}</p>
-      <p>Age: {props.age}</p>
-      <p>Student: {props.isStudent ? "Yes" : "No"}</p>
-    </div>
+    <>
+      <h1 className="question">What is your favourite month of the year?</h1>
+      <div className="buttons">
+        <button className="btn" onClick={sayHello}>
+          Autumn
+        </button>
+        <button className="btn">Winter</button>
+        <button className="btn">Summer</button>{" "}
+      </div>
+    </>
   );
 }
 
-Student.propTypes = {
-  name: PropTypes.string,
-  age: PropTypes.number,
-  Student: PropTypes.bool,
-};
+// Questions.propTypes = {
+//   name: PropTypes.string,
+//   age: PropTypes.number,
+//   Student: PropTypes.bool,
+// };
 
-export default Student;
+export default Question1;

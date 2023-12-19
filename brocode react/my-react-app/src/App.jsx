@@ -1,12 +1,14 @@
-import Student from "./Student.jsx";
+import Question1 from "./Student.jsx";
+import Question2 from "./question2.jsx";
 
 function App() {
   return (
     <>
-      <Student name="Sophia" age={21} isStudent={true} />
-      <Student name="Maria" age={19} isStudent={true} />
-      <Student name="Johnatan" age={23} isStudent={false} />
-      <Student name="Lana" age={26} isStudent={true} />
+      <h1 className="h1">
+        Which one of the newer TS's album should you listen to?
+      </h1>
+      <Question1></Question1>
+      <Question2></Question2>
     </>
   );
 }
