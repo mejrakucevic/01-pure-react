@@ -1,10 +1,28 @@
-/* .student {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 1.5em;
-  padding: 10px;
-  border: 1px solid rgb(125, 125, 125);
+.tbrList {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+}
+h1 {
+  font-size: 3.5rem;
 }
 
-.student p {
-  margin: 0;
-} */
+button {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 4px;
+  transition: background-color 0.5 ease;
+}
+
+.btn {
+  background-color: rgb(29, 173, 29);
+}
+
+.btn:hover {
+  background-color: rgb(21, 132, 21);
+}
