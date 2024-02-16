@@ -1,11 +1,9 @@
-// import Card from "./Student.jsx";
-import { useState } from "react";
-import TBR from "./ToDoList";
+import UserGreeting from "./UserGreeting.jsx";
 
 function App() {
   return (
     <>
-      <TBR></TBR>
+      <UserGreeting isLoggedIn={true} username="Mejra" />
     </>
   );
 }
