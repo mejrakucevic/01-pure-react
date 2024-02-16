@@ -1,9 +1,9 @@
-import UserGreeting from "./UserGreeting.jsx";
+import AgeChecker from "./AgeChecker.jsx";
 
 function App() {
   return (
     <>
-      <UserGreeting isLoggedIn={true} username="Mejra" />
+      <AgeChecker age="22" username="John Doe" />
     </>
   );
 }
