@@ -13,6 +13,10 @@ h1 {
 
 .taskBox {
   text-align: center;
+  padding: 10px;
+
+  border: none;
+  border-radius: 5px;
 }
 button {
   font-size: 1.2rem;
