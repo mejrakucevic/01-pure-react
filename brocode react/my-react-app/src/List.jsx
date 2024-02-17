@@ -12,8 +12,11 @@ function List() {
     { id: 4, name: "reputation ", year: 2017 },
   ];
 
-  tsAlbums.sort();
-
+  // Vrste sortiranja
+  //   tsAlbums.sort((a, b) => a.name.localeCompare(b.name)); A-Z sortiranje
+  // tsAlbums.sort((a, b) => b.name.localeCompare(a.name)); Z-A sortiranje
+  tsAlbums.sort((a, b) => a.year - b.year); // brojevno sortiranje najmanje-najvece
+  //tsAlbums.sort((a, b) => b.year - a.year); brojevno sortiranje najvece-najmanje
   const tsAlbumsList = tsAlbums.map((album) => (
     <li key={album.id}>
       {album.name} : {album.year}
