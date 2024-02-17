@@ -1,9 +1,9 @@
-import AgeChecker from "./AgeChecker.jsx";
+import List from "./List.jsx";
 
 function App() {
   return (
     <>
-      <AgeChecker age="22" username="John Doe" />
+      <List />
     </>
   );
 }
