@@ -1,9 +1,9 @@
-import List from "./List.jsx";
+import WGOA from "./WGOA";
 
 function App() {
   return (
     <>
-      <List />
+      <WGOA />
     </>
   );
 }
