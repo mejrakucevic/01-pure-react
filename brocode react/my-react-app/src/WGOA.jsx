@@ -10,6 +10,10 @@ function WGOA() {
   const alertMsg = () => {
     alert("Yay!! Cant wait!");
   };
+
+  const negAlertMsg = () => {
+    alert(":(");
+  };
   // jos onChange da se doda za btns i prikaz slike posle Yes
   return (
     <div className="box">
@@ -24,10 +28,19 @@ function WGOA() {
       )}
 
       <div className="buttons">
-        <button className="yesBtn" onClick={handleBtnClick} {alertMsg}>
+        {" "}
+        <button
+          className="yesBtn"
+          onClick={() => {
+            alertMsg();
+            handleBtnClick();
+          }}
+        >
           Yes
         </button>
-        <button className="noBtn">No</button>
+        <button className="noBtn" onClick={negAlertMsg}>
+          No
+        </button>
       </div>
     </div>
   );
