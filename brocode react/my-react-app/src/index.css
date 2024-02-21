@@ -1,68 +1,36 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url("./pics/bg.gif");
-  background-attachment: fixed;
-  background-size: cover;
-}
-.box {
-  position: relative; /* Set the container to relative positioning */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  color: white;
+  background-color: rgb(37, 37, 37);
+  color: whitesmoke;
+  font-family: "Times New Roman", Times, serif;
 }
 
-.img2 {
-  position: absolute; /* Set the second image to absolute positioning */
-  top: 0; /* Position at the top of the container */
-  left: 0; /* Position at the left of the container */
-  width: 100%; /* Ensure full width */
-  height: 100%; /* Ensure full height */
-  z-index: 1; /* Set a higher z-index to appear on top of the first image */
+h3 {
+  text-align: center;
+  border: 3px solid;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(83, 68, 50);
+  font-size: 2.5em;
 }
 
-/* Adjustments for the first image */
-.img1 {
-  width: 40vh;
-  margin-bottom: 40px;
+.listItems {
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  list-style: none;
+}
+
+li {
+  margin: 7px;
+}
+
+.listItems li:hover {
+  color: rgb(189, 189, 189);
   cursor: pointer;
 }
-.img2 {
-  margin-bottom: 40px;
+
+h3:hover {
+  transform: scale(101%);
   cursor: pointer;
-}
-.buttons {
-  display: flex;
-  justify-content: center;
-}
-
-.yesBtn,
-.noBtn {
-  margin: 0 20px;
-  background-color: #fa9ea9;
-  border-style: none;
-  width: 15vh;
-  height: 7vh;
-  border-radius: 10px;
-  cursor: pointer;
-  color: white;
-  font-size: 3vh;
-}
-
-button:hover {
-  transform: translate(-0.1em, -0.1em);
-  box-shadow: 0.2em 0.2em;
-}
-
-button:active {
-  transform: translate(0.05em, 0.05em);
-  box-shadow: 0.05em 0.05em;
-}
-
-.hidden {
-  display: none;
 }

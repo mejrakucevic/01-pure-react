@@ -9,9 +9,9 @@ function AgeChecker(props) {
   return props.age >= 18 ? adult : minor;
 }
 
-AgeChecker.proptypes = {
+AgeChecker.PropTypes = {
   username: PropTypes.string,
-  age: PropTypes.integer,
+  age: PropTypes.number,
 };
 
 AgeChecker.defaultProps = {

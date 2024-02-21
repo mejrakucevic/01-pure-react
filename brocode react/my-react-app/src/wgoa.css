@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("./pics/bg.gif");
+  background-attachment: fixed;
+  background-size: cover;
+}
+.box {
+  position: relative; /* Set the container to relative positioning */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+.img2 {
+  position: absolute; /* Set the second image to absolute positioning */
+  top: 0; /* Position at the top of the container */
+  left: 0; /* Position at the left of the container */
+  width: 100%; /* Ensure full width */
+  height: 100%; /* Ensure full height */
+  z-index: 1; /* Set a higher z-index to appear on top of the first image */
+}
+
+/* Adjustments for the first image */
+.img1 {
+  width: 40vh;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+.img2 {
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.yesBtn,
+.noBtn {
+  margin: 0 20px;
+  background-color: #fa9ea9;
+  border-style: none;
+  width: 15vh;
+  height: 7vh;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 3vh;
+}
+
+button:hover {
+  transform: translate(-0.1em, -0.1em);
+  box-shadow: 0.2em 0.2em;
+}
+
+button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
+.hidden {
+  display: none;
+}
