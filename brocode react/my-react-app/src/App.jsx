@@ -1,7 +1,6 @@
-import Button from "./Button.jsx";
-import Pfp from "./Pfp.jsx";
+import Practice from "./practice";
 function App() {
-  return <Pfp />;
+  return <Practice />;
 }
 
 export default App;
