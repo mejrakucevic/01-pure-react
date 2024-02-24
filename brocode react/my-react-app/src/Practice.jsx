@@ -1,22 +1,17 @@
 import React, { useState } from "react";
 
 function Practice() {
-  const [showImage, setShowImg] = useState(false);
+  const [name, setName] = useState("Guest");
 
-  const [showBtn, setShowBtn] = useState(true);
-
-  const handleClick = () => {
-    setShowImg(true);
-    setShowBtn(false);
+  const updateName = () => {
+    setName("Mejra");
   };
 
   return (
-    <>
-      <div className="container">
-        {showBtn && <button onClick={handleClick}>Click me!</button>}
-        {showImage && <img src="./pics/frankie.jpg" alt="frank ocean"></img>}
-      </div>
-    </>
+    <div>
+      <p>Name: {name} </p>
+      <button onClick={updateName}>Set Name</button>
+    </div>
   );
 }
 
