@@ -34,7 +34,7 @@ h3:hover {
   transform: scale(101%);
   cursor: pointer;
 } */
-/* 
+
 .container {
   display: flex;
   justify-content: center;
@@ -43,7 +43,7 @@ h3:hover {
 }
 button {
   padding: 10px;
-  margin: 0px;
+  margin: 50px;
   width: 15vh;
   height: 8vh;
   font-size: 1.8vh;
@@ -60,4 +60,4 @@ button:hover {
 
 img {
   cursor: pointer;
-} */
+}

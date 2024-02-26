@@ -1,17 +1,30 @@
 import React, { useState } from "react";
 
 function Practice() {
-  const [name, setName] = useState("Guest");
+  // const [name, setName] = useState("Guest");
+  // const updateName = () => {
+  //   setName("Mejra");
+  // };
+  // return (
+  //   <div>
+  //     <p>Name: {name} </p>
+  //     <button onClick={updateName}>Set Name</button>
+  //   </div>
+  // );
 
-  const updateName = () => {
-    setName("Mejra");
+  const [attribute, setAttribute] = useState("");
+
+  const handleClick = () => {
+    setAttribute("depresed lol");
   };
-
   return (
-    <div>
-      <p>Name: {name} </p>
-      <button onClick={updateName}>Set Name</button>
-    </div>
+    <>
+      <div className="container">
+        <h1>Do you like Conan gray?</h1>
+        <button onClick={handleClick}>Yes</button>
+        <h2>You're...{attribute}</h2>
+      </div>
+    </>
   );
 }
 
