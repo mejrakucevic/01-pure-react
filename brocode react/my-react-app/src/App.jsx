@@ -1,6 +1,6 @@
-import Practice from "./practice";
+import Counter from "./Counter";
 function App() {
-  return <Practice />;
+  return <Counter />;
 }
 
 export default App;

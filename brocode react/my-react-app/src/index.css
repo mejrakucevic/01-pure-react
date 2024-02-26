@@ -36,10 +36,8 @@ h3:hover {
 } */
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 button {
   padding: 10px;
@@ -62,9 +60,7 @@ img {
   cursor: pointer;
 }
 
-.container2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 400px;
+h1 {
+  font-size: 5em;
+  margin-top: 5;
 }
