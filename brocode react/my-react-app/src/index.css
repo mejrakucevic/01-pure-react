@@ -61,3 +61,10 @@ button:hover {
 img {
   cursor: pointer;
 }
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 400px;
+}
