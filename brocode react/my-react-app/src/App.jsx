@@ -1,6 +1,5 @@
-import Counter from "./Counter";
 function App() {
-  return <Counter />;
+  return <BMICalc />;
 }
 
 export default App;
