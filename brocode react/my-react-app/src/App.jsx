@@ -1,7 +1,7 @@
-import ColorPicker from "./ColorPicker";
+import ToDo from "./toDo";
 
 function App() {
-  return <ColorPicker />;
+  return <ToDo />;
 }
 
 export default App;
