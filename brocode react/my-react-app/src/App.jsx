@@ -1,6 +1,7 @@
-import OnChange from "./OnChange";
+import ColorPicker from "./ColorPicker";
+
 function App() {
-  return <OnChange />;
+  return <ColorPicker />;
 }
 
 export default App;
