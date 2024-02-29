@@ -1,5 +1,6 @@
+import OnChange from "./OnChange";
 function App() {
-  return <BMICalc />;
+  return <OnChange />;
 }
 
 export default App;
