@@ -2,11 +2,17 @@ import React from "react";
 import styles from "./Main.module.css";
 import pc from "./pics/pc.png";
 import spaceinvaders from "./pics/spaceinvaders.png";
-import razer from "./pics/razer.png";
-import amd from "./pics/amd.png";
-import sony from "./pics/sony.png";
-import Shop from "../pages/Shop";
+import Shop from "./Shop";
+
+// import razer from "./pics/razer.png";
+// import amd from "./pics/amd.png";
+// import sony from "./pics/sony.png";
+// import Shop from "../pages/Shop";
+
 function Main() {
+  const handleBtnClick = () => {
+    window.location.href = "./Shop";
+  };
   return (
     <>
       <header className={styles.header}>
@@ -37,9 +43,7 @@ function Main() {
           We're a team of Computer Science specialists, with a mission to get
           you the ultimate PC experience. Oh, and we love games too!
         </p>
-        <button>
-          <a href={Shop}>Shop Now</a>
-        </button>
+        <button onClick={handleBtnClick}>Shop Now</button>
         <img
           src={spaceinvaders}
           alt="spaceinvaderslogo"
