@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import styles from "./Main.module.css";
 import pc from "./pics/pc.png";
 import spaceinvaders from "./pics/spaceinvaders.png";
@@ -10,8 +11,10 @@ import Shop from "./Shop";
 // import Shop from "../pages/Shop";
 
 function Main() {
-  const handleBtnClick = () => {
-    window.location.href = "./Shop";
+  const [modal, setModal] = useState(false);
+
+  const toggleModa = () => {
+    setModal(!modal);
   };
   return (
     <>
@@ -43,7 +46,7 @@ function Main() {
           We're a team of Computer Science specialists, with a mission to get
           you the ultimate PC experience. Oh, and we love games too!
         </p>
-        <button onClick={handleBtnClick}>Shop Now</button>
+        <button onClick={toggleModa}>Shop Now</button>
         <img
           src={spaceinvaders}
           alt="spaceinvaderslogo"
@@ -87,6 +90,12 @@ function Main() {
 
         <h2>ABOUT US</h2>
       </footer>
+
+      {modal && (
+        <div>
+          <Shop />
+        </div>
+      )}
     </>
   );
 }
