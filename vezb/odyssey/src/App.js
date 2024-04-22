@@ -1,12 +1,8 @@
-import React, { useState } from "react";
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-const App = () => {
-  return (
-    <div>
-      <h1 className="text-info">App</h1>
-    </div>
-  );
-};
+import "./App.css";
+import Main from "./components/main";
+
+function App() {
+  return <Main />;
+}
 
 export default App;
-np;
