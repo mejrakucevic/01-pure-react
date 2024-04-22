@@ -45,3 +45,24 @@ header h3 {
   margin-right: 60px;
   font-size: 25px;
 }
+
+.cmt {
+  position: absolute;
+  right: 0;
+  top: 550px;
+  margin-right: 100px;
+}
+
+textarea {
+  position: absolute;
+  right: 0;
+  top: 600px;
+  margin-right: 150px;
+}
+
+.arrays {
+  position: absolute;
+  right: 0;
+  margin-right: 150px;
+  top: 200px;
+}
